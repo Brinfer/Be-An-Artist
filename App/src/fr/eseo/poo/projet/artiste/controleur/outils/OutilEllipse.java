@@ -15,7 +15,7 @@ import fr.eseo.poo.projet.artiste.vue.formes.VueForme;
  * 
  * @since 0.3.4.7
  * 
- * @version 0.3.5.3
+ * @version 0.4.4.2
  */
 public class OutilEllipse extends OutilForme {
 
@@ -24,13 +24,15 @@ public class OutilEllipse extends OutilForme {
 	 * 
 	 * @since 0.3.4.7
 	 * 
-	 * @version 0.3.5.3
+	 * @version 0.4.4.2
 	 */
 	@Override
 	protected VueForme creerVueForme() {
 		final Ellipse ellipse = new Ellipse(super.getDebut());
 		ellipse.setCouleur(super.getPanneauDessin().getCouleurCourante());
 		ellipse.setRempli(super.getPanneauDessin().getModeRemplissage());
+		ellipse.setEpaisseurTrait(super.getPanneauDessin().getEpaisseurCourante());
+
 		if (!super.getDebut().equals(super.getFin())) {
 			double largeur = super.getFin().getAbscisse() - super.getDebut().getAbscisse();
 			double hauteur = super.getFin().getOrdonnee() - super.getDebut().getOrdonnee();

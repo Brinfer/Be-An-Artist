@@ -17,7 +17,7 @@ import org.junit.runners.Parameterized.Parameters;
  * 
  * @since 0.3.2.7
  * 
- * @version 0.3.6.1
+ * @version 0.4.4.1
  */
 @RunWith(Parameterized.class)
 public class EtoileTestToStringParameterized {
@@ -95,13 +95,15 @@ public class EtoileTestToStringParameterized {
 
         String descriptionAttendue = "[Etoile] : pos " + this.etoile.getPosition().toString() + " dim "
                 + this.largeurAfficher + " x " + this.hauteurAfficher + " périmètre : " + this.perimetreAfficher
-                + " aire : " + this.aireAfficher + this.etoile.descriptionCouleur();
+                + " aire : " + this.aireAfficher + this.etoile.descriptionCouleur()
+                + this.etoile.descriptionEpaisseurTrait();
         assertEquals("Test de toString()", descriptionAttendue, this.etoile.toString());
 
         etoile.setRempli(true);
         descriptionAttendue = "[Etoile-Rempli] : pos " + this.etoile.getPosition().toString() + " dim "
                 + this.largeurAfficher + " x " + this.hauteurAfficher + " périmètre : " + this.perimetreAfficher
-                + " aire : " + this.aireAfficher + this.etoile.descriptionCouleur();
+                + " aire : " + this.aireAfficher + this.etoile.descriptionCouleur()
+                + this.etoile.descriptionEpaisseurTrait();
         assertEquals("Test de toString()", descriptionAttendue, this.etoile.toString());
     }
 }

@@ -17,7 +17,7 @@ import org.junit.runners.Parameterized.Parameters;
  * 
  * @since 0.3.2.7
  * 
- * @version 0.3.6.1
+ * @version 0.4.4.1
  */
 @RunWith(Parameterized.class)
 public class EllipseTestToStringParameterized {
@@ -103,13 +103,15 @@ public class EllipseTestToStringParameterized {
 
         String descriptionAttendue = "[Ellipse] : pos " + this.ellipse.getPosition().toString() + " dim "
                 + this.largeurAfficher + " x " + this.hauteurAfficher + " périmètre : " + this.perimetreAfficher
-                + " aire : " + this.aireAfficher + this.ellipse.descriptionCouleur();
+                + " aire : " + this.aireAfficher + this.ellipse.descriptionCouleur()
+                + this.ellipse.descriptionEpaisseurTrait();
         assertEquals("Test de toString()", descriptionAttendue, this.ellipse.toString());
 
         ellipse.setRempli(true);
         descriptionAttendue = "[Ellipse-Rempli] : pos " + this.ellipse.getPosition().toString() + " dim "
                 + this.largeurAfficher + " x " + this.hauteurAfficher + " périmètre : " + this.perimetreAfficher
-                + " aire : " + this.aireAfficher + this.ellipse.descriptionCouleur();
+                + " aire : " + this.aireAfficher + this.ellipse.descriptionCouleur()
+                + this.ellipse.descriptionEpaisseurTrait();
         assertEquals("Test de toString()", descriptionAttendue, this.ellipse.toString());
     }
 }

@@ -4,6 +4,8 @@ import fr.eseo.poo.projet.artiste.modele.formes.Ligne;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
+import java.awt.Stroke;
+import java.awt.BasicStroke;
 
 /**
  * Classe {@code VueLigne} permettant l'affichage d'une ligne, à partir de la
@@ -15,7 +17,7 @@ import java.awt.Graphics2D;
  * 
  * @since 0.3.3.4
  * 
- * @version 0.3.3.4
+ * @version 0.4.4.2
  */
 public class VueLigne extends VueForme {
 
@@ -41,15 +43,23 @@ public class VueLigne extends VueForme {
 	 *      - Chraphics - drawLine</a>
 	 * 
 	 * @since 0.3.3.4
+	 * 
+	 * @version  0.4.4.2
 	 */
 	@Override
 	public void affiche(final Graphics2D g2d) {
 		Color colorOld = g2d.getColor();
+		final Stroke strokeOld = g2d.getStroke();
+
 		g2d.setColor(super.getForme().getCouleur());
+		g2d.setStroke(new BasicStroke(super.getForme().getEpaisseurTrait()));
+
 		g2d.drawLine((int) super.getForme().getPosition().getAbscisse(),
 				(int) super.getForme().getPosition().getOrdonnee(),
 				(int) (super.getForme().getPosition().getAbscisse() + super.getForme().getLargeur()),
 				(int) (super.getForme().getPosition().getOrdonnee() + super.getForme().getHauteur()));
+		
 		g2d.setColor(colorOld);
+		g2d.setStroke(strokeOld);
 	}
 }

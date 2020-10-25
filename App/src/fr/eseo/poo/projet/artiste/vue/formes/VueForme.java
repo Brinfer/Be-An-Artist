@@ -10,8 +10,6 @@ import java.awt.Graphics2D;
  * @author Brinfer
  * 
  * @since 0.3.3.3
- * 
- * @version 0.3.3.3
  */
 public abstract class VueForme {
 
@@ -37,7 +35,7 @@ public abstract class VueForme {
 	/**
 	 * Accesseur de la {@code forme}.
 	 * 
-	 * @return La {@code Forme} que l'on affiche.
+	 * @return La {@code Forme} qui est lié à la {@code VueForme}.
 	 * 
 	 * @since 0.3.3.3
 	 */
@@ -52,10 +50,10 @@ public abstract class VueForme {
 	 *            s’affiche.
 	 * 
 	 * @see <a href=
-	 *      "https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html">Oracle
+	 *      "https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics2D.html">Oracle
 	 *      - Chraphics2D</a>
 	 * @see <a href=
-	 *      "https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics.html">Oracle
+	 *      "https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics.html">Oracle
 	 *      - Chraphics</a>
 	 * 
 	 * @since 0.3.3.3

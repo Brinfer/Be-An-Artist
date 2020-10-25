@@ -13,8 +13,6 @@ import fr.eseo.poo.projet.artiste.modele.Coordonnees;
  * @author Brinfer
  *
  * @since 0.3.2.6
- * 
- * @version 0.3.3.6
  */
 public class Cercle extends Ellipse {
 
@@ -141,7 +139,7 @@ public class Cercle extends Ellipse {
 	 * 
 	 * @see Forme#equals(Object)
 	 * 
-	 * @since 0.3.3.6
+	 * @since 0.3.2.6
 	 */
 	@Override
 	public boolean equals(Object other) {
@@ -162,7 +160,7 @@ public class Cercle extends Ellipse {
 	 * @see Forme#hashCode()
 	 * @see String#hashCode()
 	 * 
-	 * @since 0.3.3.6
+	 * @since 0.3.2.6
 	 */
 	@Override
 	public int hashCode() {
