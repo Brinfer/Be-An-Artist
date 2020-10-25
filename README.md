@@ -33,3 +33,5 @@ Un objet Contrôleur agit comme un intermédiaire entre les objets Vue et Modèl
 ## Lancement
 
 Pour lancer l'application, il suffit d'exécuter la commande `java -jar Be-An-Artist.jar` à la racine du projet.
+
+Le projet à été développé sous Java 8.
