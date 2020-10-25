@@ -1,6 +1,7 @@
 package fr.eseo.poo.projet.artiste.controleur.outils;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.SwingUtilities;
 
@@ -8,6 +9,7 @@ import java.awt.event.MouseEvent;
 import java.awt.BorderLayout;
 import java.awt.Component;
 
+import fr.eseo.poo.projet.artiste.controleur.actions.ActionChoisirNombreDeBranches;
 import fr.eseo.poo.projet.artiste.modele.Coordonnees;
 import fr.eseo.poo.projet.artiste.modele.formes.Etoile;
 import fr.eseo.poo.projet.artiste.vue.ihm.PanneauBarreOutils;
@@ -85,13 +87,19 @@ public class OutilEtoileTest {
 		this.frame.setVisible(true);
 		this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		this.outil = new OutilEtoile(this.panneauOutils);
+		this.outil = new OutilEtoile();
 
 		for (final Component comp : this.panneauOutils.getComponents()) {
-			if (comp.getName().equals(PanneauBarreOutils.BRANCHE_SPINNER_NOM)) {
-				this.nbBranche = (JSpinner) comp;
-			} else if (comp.getName().equals(PanneauBarreOutils.LONGUEUR_SPINNER_NOM)) {
-				this.longueurBranche = (JSpinner) comp;
+			if (comp.getName().equals(PanneauBarreOutils.CONTENEUR_CARD_NOM)) {
+				JPanel jPanel = (JPanel) comp;
+				for (final Component subComp : jPanel.getComponents()) {
+					if (comp.getName().equals(ActionChoisirNombreDeBranches.NOM_ACTION)) {
+						this.nbBranche = (JSpinner) subComp;
+					} else if (comp.getName().equals(ActionChoisirNombreDeBranches.NOM_ACTION)) {
+						this.longueurBranche = (JSpinner) subComp;
+					}
+				}
+				break;
 			}
 		}
 

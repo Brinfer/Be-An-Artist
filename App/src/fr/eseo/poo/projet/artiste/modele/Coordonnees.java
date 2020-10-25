@@ -23,8 +23,6 @@ import java.text.DecimalFormat;
  * @author Brinfer
  * 
  * @since 0.3.2.1
- * 
- * @version 0.3.2.1
  */
 public class Coordonnees {
 

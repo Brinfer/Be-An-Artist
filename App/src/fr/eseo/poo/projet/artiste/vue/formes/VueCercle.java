@@ -11,8 +11,6 @@ import fr.eseo.poo.projet.artiste.modele.formes.Cercle;
  * @author Brinfer
  * 
  * @since 0.3.3.7
- * 
- * @version 0.3.3.7
  */
 public class VueCercle extends VueEllipse {
 
@@ -20,7 +18,7 @@ public class VueCercle extends VueEllipse {
 	 * Constructeur d'une nouvelle {@code VueEllipse}. L'instance de la classe est
 	 * initialisé avec le cercle donnée en paramètre.
 	 * 
-	 * @param cerccle Le {@code Cercle} que l'on souhaite afficher.
+	 * @param cercle Le {@code Cercle} que l'on souhaite afficher.
 	 * 
 	 * @see VueEllipse#VueEllipse(fr.eseo.poo.projet.artiste.modele.formes.Ellipse)
 	 * 

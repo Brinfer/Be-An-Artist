@@ -6,6 +6,8 @@ import java.awt.Color;
  * L'{@code interface Coloriable} spéciefie les méthodes à utiliser pour changer
  * et récupérer la couleur d'une {@code Forme}.
  * 
+ * @see Forme
+ * 
  * @author Brinfer
  * 
  * @since 0.3.5.1

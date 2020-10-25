@@ -11,8 +11,6 @@ import fr.eseo.poo.projet.artiste.vue.formes.VueForme;
  * @author Brinfer
  * 
  * @since 0.3.4.2
- * 
- * @version 0.3.4.2
  */
 public abstract class OutilForme extends Outil {
 
@@ -35,6 +33,9 @@ public abstract class OutilForme extends Outil {
 	 * 
 	 * Dans le cas où il s'agit d'un double clic, alors une forme avec les
 	 * paramètres par défaut est afficher à la position du double clics
+	 * 
+	 * @param event Le {@code MouseEvent} associé au click de la souris.
+
 	 * 
 	 * @since 0.3.4.2
 	 */

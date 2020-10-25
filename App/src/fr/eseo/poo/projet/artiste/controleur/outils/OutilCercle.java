@@ -1,7 +1,5 @@
 package fr.eseo.poo.projet.artiste.controleur.outils;
 
-import java.awt.event.MouseEvent;
-
 import fr.eseo.poo.projet.artiste.modele.formes.Cercle;
 import fr.eseo.poo.projet.artiste.vue.formes.VueCercle;
 import fr.eseo.poo.projet.artiste.vue.formes.VueForme;
@@ -17,7 +15,7 @@ import fr.eseo.poo.projet.artiste.vue.formes.VueForme;
  * 
  * @since 0.3.4.7
  * 
- * @version 0.3.5.3
+ * @version 0.4.4.2
  */
 public class OutilCercle extends OutilForme {
 
@@ -26,13 +24,15 @@ public class OutilCercle extends OutilForme {
 	 * 
 	 * @since 0.3.4.7
 	 * 
-	 * @version 0.3.5.3
+	 * @version 0.4.4.2
 	 */
 	@Override
 	protected VueForme creerVueForme() {
 		final Cercle cercle = new Cercle(super.getDebut());
 		cercle.setCouleur(super.getPanneauDessin().getCouleurCourante());
 		cercle.setRempli(super.getPanneauDessin().getModeRemplissage());
+		cercle.setEpaisseurTrait(super.getPanneauDessin().getEpaisseurCourante());
+
 		if (!super.getDebut().equals(super.getFin())) {
 			cercle.setLargeur(Math.max(Math.abs(super.getFin().getAbscisse() - super.getDebut().getAbscisse()),
 					Math.abs(super.getFin().getOrdonnee() - super.getDebut().getOrdonnee())));
@@ -49,15 +49,5 @@ public class OutilCercle extends OutilForme {
 			}
 		}
 		return new VueCercle(cercle);
-	}
-
-	/**
-	 * Surchage inutile de {@linkplain OutilForme#mouseClicked(MouseEvent)} mais
-	 * nécessaire à la validation des tests.
-	 * 
-	 */
-	@Override
-	public void mouseClicked(final MouseEvent event) {
-		super.mouseClicked(event);
 	}
 }

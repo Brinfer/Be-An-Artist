@@ -6,13 +6,11 @@
 
 </p>
 
-Projet réalisé dans le cadre du Grand Projet Informatique 1 en première année de cycle ingénieure de l'École d'Électronique de L'Ouest 2020.
-
 ## Préambule
 
-Développer un éditeur graphique offrant des fonctionnalités similaires à celles fournies par des logiciels bien connus de tous (eg Dia, Inkscape ou MSPaint).
+L'objectif du projet est de développer un éditeur graphique offrant des fonctionnalités similaires à celles fournies par des logiciels bien connus de tous (eg Dia, Inkscape ou MSPaint).
 
-L’éditeur que conçu dans le cadre de ce travail permettra de dessiner les formes géométriques telles que les lignes, les ellipses, les cercles et les étoiles.
+L’éditeur qui est conçu dans le cadre de ce travail permettra de dessiner les formes géométriques telles que les lignes, les ellipses, les cercles et les étoiles.
 
 Pour programmer cette application, nous suivrons le patron d’architecture logicielle (software architectural pattern) Modèle-Vue-Contrôleur (MVC). Cette architecture spécifie une méthodologie permettant de faciliter le développement d’une application graphique interactive.
 

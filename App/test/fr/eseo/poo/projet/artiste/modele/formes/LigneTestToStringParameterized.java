@@ -18,7 +18,7 @@ import static org.junit.Assert.assertEquals;
  * 
  * @since 0.3.2.5
  * 
- * @version 0.3.5.1
+ * @version 0.4.4.1
  */
 @RunWith(Parameterized.class)
 public class LigneTestToStringParameterized {
@@ -97,7 +97,7 @@ public class LigneTestToStringParameterized {
         // Test locale fr
         String descriptionAttendue = "[Ligne] c1 : " + this.ligne.getC1().toString() + " c2 : " + this.ligne.getC2().toString()
                 + " longueur : " + this.longueurAffichage + " angle : " + this.angleAffichage
-                + "°" + this.ligne.descriptionCouleur();
+                + "°" + this.ligne.descriptionCouleur() + this.ligne.descriptionEpaisseurTrait();
 
         assertEquals("Test de toString()", descriptionAttendue, this.ligne.toString());
 

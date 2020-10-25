@@ -10,7 +10,7 @@ import fr.eseo.poo.projet.artiste.vue.ihm.PanneauDessin;
 public class EtreUnArtiste {
 	public EtreUnArtiste() {
 		JFrame frame = new JFrame();
-		PanneauDessin panneauDessin = new PanneauDessin();
+		PanneauDessin panneauDessin = new PanneauDessin(500, 500, PanneauDessin.COULEUR_FOND_PAR_DEFAUT);
 
 		frame.getContentPane().add(panneauDessin);
 		frame.setTitle("Etre Un Artiste");
@@ -24,10 +24,6 @@ public class EtreUnArtiste {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
-	
-	/** 
-	 * @param args
-	 */
 	public static void main(String[] args){
 		new EtreUnArtiste();
 	}

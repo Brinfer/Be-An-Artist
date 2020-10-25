@@ -10,7 +10,7 @@ import org.junit.runners.Suite.SuiteClasses;
  * @see CercleTest
  * @see CercleTestPerimetreParameterized
  * 
- * @author gautiepi
+ * @author Brinfer
  * 
  * @since 0.3.2.7
  * 

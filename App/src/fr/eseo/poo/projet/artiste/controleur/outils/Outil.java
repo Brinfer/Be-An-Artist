@@ -13,8 +13,6 @@ import fr.eseo.poo.projet.artiste.vue.ihm.PanneauDessin;
  * @author Brinfer
  * 
  * @since 0.3.4.1
- * 
- * @version 0.3.4.1
  */
 public abstract class Outil implements MouseInputListener {
 

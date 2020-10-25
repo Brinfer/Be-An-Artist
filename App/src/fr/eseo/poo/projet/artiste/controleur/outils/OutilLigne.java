@@ -15,7 +15,7 @@ import fr.eseo.poo.projet.artiste.modele.formes.Ligne;
  * 
  * @since 0.3.4.3
  * 
- * @version 0.3.5.3
+ * @version 0.4.4.2
  */
 public class OutilLigne extends OutilForme {
 
@@ -24,12 +24,13 @@ public class OutilLigne extends OutilForme {
 	 * 
 	 * @since 0.3.4.3
 	 * 
-	 * @version 0.3.5.3
+	 * @version 0.4.4.2
 	 */
 	@Override
 	protected VueForme creerVueForme() {
 		final Ligne ligne = new Ligne(super.getDebut());
 		ligne.setCouleur(super.getPanneauDessin().getCouleurCourante());
+		ligne.setEpaisseurTrait(super.getPanneauDessin().getEpaisseurCourante());
 		if (!super.getDebut().equals(super.getFin())) {
 			ligne.setC2(super.getFin());
 		}

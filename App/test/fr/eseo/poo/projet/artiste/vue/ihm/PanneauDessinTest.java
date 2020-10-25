@@ -11,6 +11,7 @@ import javax.swing.SwingUtilities;
  * @author Brinfer
  * 
  * @since 0.3.3.2 
+ * 
  */
 public class PanneauDessinTest {
     public static void main(final String[] args) {
