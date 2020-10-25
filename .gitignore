@@ -1,0 +1,7 @@
+# IDE settings
+**/.vscode/*
+
+*.ggb
+*.pdf
+
+**/bin/*
